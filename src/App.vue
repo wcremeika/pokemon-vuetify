@@ -9,17 +9,19 @@
     </v-app-bar>
 
     <v-main>
+      <alerts />
       <router-view />
     </v-main>
   </v-app>
 </template>
 
 <script>
+import alerts from "./modules/alerts/alerts.component.vue";
+
 export default {
   name: "App",
-
-  data: () => ({
-    //
-  }),
+  components: {
+    alerts,
+  },
 };
 </script>
